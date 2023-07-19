@@ -1,21 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
- * main - Prints the alphabet in lowercase, followed by a new line.
+ * _isalpha - checks for alphabetic character
  *
- * Return: Always 0 (Success)
+ * @c: the character to be checked
+ *
+ * Return: 1 if c is a letter, 0 otherwise
  */
-int main(void)
+int _isalpha(int c)
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; ++letter)
-	{
-		if (letter != 'e' && letter != 'q')
-		{
-		putchar(letter);
-		}
-	}
-	putchar('\n');
-	return (0);
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
