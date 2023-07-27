@@ -7,7 +7,7 @@
  * @src: The source string to be appended to @dest.
  *
  * Return: A pointer to the destination string @dest.
- * done by Temesgen Abdissa
+ * 
  */
 char *_strcat(char *dest, char *src)
 {
