@@ -1,7 +1,7 @@
 #ifndef _DOG_H_
 #define _DOG_H_
 
-/*
+/**
  * struct dog - a dog's basic information 
  * @name: name of the dog
  * @age: age of the dog
