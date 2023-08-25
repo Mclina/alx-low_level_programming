@@ -1,5 +1,5 @@
-#ifndef LISTS_H
-#define LISTS_H
+#ifndef _LISTS_H_
+#define _LISTS_H_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -28,4 +28,4 @@ void free_list(list_t *head);
 int _putchar(char c);
 int _strlen(char *s);
 
-#endifi
+#endif
