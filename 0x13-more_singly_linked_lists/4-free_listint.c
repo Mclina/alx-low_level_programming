@@ -6,17 +6,17 @@
  *
  * @head: the head of the list
  *
- * Return: NULL if error
+ * Return: NULL 
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *new_node;
+	listint_t *next;
 
 	while (head != NULL)
 	{
-		new_node = head->new_node;
+		next = head->next;
 		free(head);
-		head = new_node;
+		head = next;
 	}
 }
