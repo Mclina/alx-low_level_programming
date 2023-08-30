@@ -1,11 +1,13 @@
 #include "lists.h"
 #include <stdio.h>
 /**
- * free_listint_safe - frees a linked list
- * @h: pointer to the first node in the linked list
- *
- * Return: number of elements in the freed list
- */
+* free_listint_safe - Frees a listint_t list
+*
+* @h: listint_t double pointer
+*
+* Return: size_t
+*/
+
 size_t free_listint_safe(listint_t **h)
 {
 	size_t count = 0;
