@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * binary_to_uint - This funtion convert binary to decimal
  * @b: This is my string of entry
@@ -9,7 +10,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int decimal = 0;
 	int len = 1, index = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 	for (index = 0; b[index] != '\0'; index++)
 	{
